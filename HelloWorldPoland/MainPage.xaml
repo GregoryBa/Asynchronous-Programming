@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="HelloWorldPoland.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorldPoland"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="{ThemeResource AppBarButtonForegroundPointerOver}" Margin="0,0,-48,-39">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="349*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <MediaElement x:Name="mediaElement" 
+              Source="MUSIC4.mp3" MediaEnded="media_MediaEnded" 
+              Width="400" AutoPlay="False"/>
+        
+      
+        
+        
+        <Ellipse x:Name="LampeFuktighet" Grid.ColumnSpan="2" Fill="#FFFF0909" HorizontalAlignment="Left" Height="68" Margin="19,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="73" Grid.Row="1"/>
+        <Button x:Name="PlayBTN" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Margin="1215,866,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="button1" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="button_Copy" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Margin="1312,866,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="2.077,0.344"/>
+        <TextBlock x:Name="tb_timer" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="51,785,0,0" Grid.Row="1" TextWrapping="Wrap" Text="22:22" VerticalAlignment="Top" Height="196" Width="428" FontSize="180" Foreground="White" FontFamily="Lucida Fax"/>
+        <TextBlock x:Name="tb_sek" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="484,812,0,0" Grid.Row="1" TextWrapping="Wrap" Text="22" VerticalAlignment="Top" Height="98" Width="74" Foreground="White" FontSize="50" RenderTransformOrigin="0.091,0.639"/>
+        <TextBlock x:Name="tb_dato" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="51,986,0,0" Grid.Row="1" TextWrapping="Wrap" Text="25 June 2016" VerticalAlignment="Top" Height="62" Width="507" FontSize="48" Foreground="White"/>
+        <TextBlock x:Name="tb_dag" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="479,981,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Wednesday" VerticalAlignment="Top" Height="62" Width="507" FontSize="48" Foreground="White"/>
+        <TextBlock x:Name="tb_quotes" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="1280,812,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Wednesday" VerticalAlignment="Top" Height="245" Width="659" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="tb_fuktighet" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="125,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Status Humidity" VerticalAlignment="Top" Height="62" Width="507" FontSize="24" Foreground="White"/>
+        <Button x:Name="btn_VolumeHigh" Grid.ColumnSpan="2" Content="+" HorizontalAlignment="Left" Margin="803,880,0,0" Grid.Row="1" VerticalAlignment="Top" Background="White" Height="79" Width="42" BorderBrush="#FF3818FF" FontSize="36" Click="btn_VolumeHigh_Click"/>
+        <Button x:Name="btn_VolumeLow" Grid.ColumnSpan="2" Content="-" HorizontalAlignment="Left" Margin="803,964,0,0" Grid.Row="1" VerticalAlignment="Top" Background="White" Height="79" Width="42" BorderBrush="#FF3818FF" FontSize="36" RenderTransformOrigin="0.5,2.139" Click="btn_VolumeLow_Click"/>
+        <Button x:Name="btn_Play" Grid.ColumnSpan="2" Content="►" HorizontalAlignment="Left" Margin="876,926,0,0" Grid.Row="1" VerticalAlignment="Top" Background="White" Height="79" Width="42" BorderBrush="#FF3818FF" FontSize="36" Click="btn_Play_Click"/>
+        <Button x:Name="btn_Pause" Grid.ColumnSpan="2" Content="||" HorizontalAlignment="Left" Margin="944,926,0,0" Grid.Row="1" VerticalAlignment="Top" Background="White" Height="79" Width="42" BorderBrush="#FF3818FF" FontSize="36" Click="btn_Pause_Click"/>
+        <Button x:Name="btn_Stop" Grid.ColumnSpan="2" Content="◼ " HorizontalAlignment="Left" Margin="1019,926,0,0" Grid.Row="1" VerticalAlignment="Top" Background="White" Height="79" Width="42" BorderBrush="#FF3818FF" FontSize="36" Click="btn_Stop_Click"/>
+
+
+    </Grid>
+</Page>
